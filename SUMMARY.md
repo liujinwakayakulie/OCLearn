@@ -1,5 +1,5 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
-* [start](test2.md)
+* [start](start.md)
 
