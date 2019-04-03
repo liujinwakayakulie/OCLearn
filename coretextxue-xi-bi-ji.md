@@ -18,7 +18,7 @@
 
 [Core Text Programming Guide](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/CoreText_Programming/Introduction/Introduction.html)
 
-# 目录 
+# 目录
 
 [文字在iOS的显示](#1)
 
@@ -32,45 +32,11 @@
 
 ##### Characters and Glyphs
 
-character是最小的具有意义的书面语言。character是一个抽象的概念。character必须在一定区域里以可识别的形状展现，这也就是Glyph的概念。，可识别就意味着一个character并不是和glyph一一对应的。一个character可以对应多个Glyphs.
+character是最小的具有意义的书面语言。character是一个抽象的概念。character必须在一定区域里以可识别的形状展现，这也就是Glyph的概念。可识别就意味着一个character并不是和glyph一一对应的。一个character可以对应多个Glyphs.
 
 ![](/assets/glyph_a_2x.png)
 
 这五个a就是不同的glyph，一个glyph也可以和多个character对应。连笔\(ligature\)造成了一个glyph对应多个character。
 
 ![](/assets/romanligatures_2x.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
