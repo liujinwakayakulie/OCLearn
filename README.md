@@ -1,6 +1,6 @@
 # Introduction
 
-这是一段介绍文字
+leetcode c语言版
 
-
+答案并非个人原创，为整理所得。
 
