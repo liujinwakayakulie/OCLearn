@@ -54,8 +54,6 @@ character必须在一定区域里以可识别的形状展现，这也就是Glyph
 
 ![](/assets/times_font_family_2x.png)
 
-
-
 **Styles**, also called _**trait**s_, include variations such as bold, italic, condensed, expanded, narrow, small caps, poster fonts, and fixed pitch.Styles像是另一种划分标准。
 
 #### Text Layout
@@ -66,21 +64,21 @@ character必须在一定区域里以可识别的形状展现，这也就是Glyph
 
 紧接上一个问题，这里又会自然遇到一个场景，可视化设备是有固定的长宽的，如果从左到右触及到了可视化设备的右边界，就需要在下面一行继续显示了。这里就很自然的引入了“行”的概念。具体针对不同文字的折行规则这里就不讨论了。布局管理通过baseline来实现行这一概念，通常baseline是水平的，并且glyph的底部边界在baseline上。不过这并非绝对的，如“g”的底部就会超过baseline。这条线很像xy坐标系的x轴，那么由此也产生了一个新的概念-origin point，它代表glyph在基线上最左侧的点。下面解释一些神图上的概念。
 
-_advance width:_origin point 到相邻glyph的距离
+_advance width_:\_origin point 到相邻glyph的距离
 
-_left-side bearing:_origin point 到glyph left side 的空间
+_left-side bearing_:\_origin point 到glyph left side 的空间
 
-_right-side bearing:_glyph right side 到 advance 右端点的空间
+_right-side bearing_:\_glyph right side 到 advance 右端点的空间
 
-_ascent:_origin point 到glyph最高点的距离
+_ascent_:origin point 到glyph最高点的距离
 
-_dscent:_origin point 到glyph最低点的距离
+_dscent_:origin point 到glyph最低点的距离
 
 _bounding box:_包围glyph的可见矩形
 
 _x height:_小写“x”的高度
 
-_cap height:_origin point 到 flat capital letters of glyphs 顶部的距离\(flat capital letter 头部为圆或尖的字母 A或者O\)
+_cap height_:origin point 到 flat capital letters of glyphs 顶部的距离\(flat capital letter 头部为圆或尖的字母 A或者O\)
 
 _line grap\(leading\):_铅字行线之间的距离，这个才是叫做行间距。这里我理解，这个原型应该是手工排版时期的铅条的概念，延续至今的结果，找到三篇文章可以佐证。[文章1](https://www.csdn.net/article/2012-12-04/2812467-CSS-Leading) [文章2](http://www.360doc.com/content/10/0404/20/482504_21598271.shtml) [文章3](https://en.wikipedia.org/wiki/Leading)
 
@@ -91,12 +89,4 @@ _kerning:_类似大写W和大写A，[如图](https://developer.apple.com/library
 _Alignment：_左、右、居中对齐，[图](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Art/alignmentkinds_2x.png)
 
 _justified：_左右同时对齐，[图](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Art/justified_2x.png)
-
-
-
-
-
-
-
-
 
