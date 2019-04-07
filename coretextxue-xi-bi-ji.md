@@ -22,6 +22,8 @@
 
 [文字在iOS的显示](#1)
 
+[CoreText理论知识](#coretext)
+
 ## 1、文字在iOS的显示
 
 ![](/assets/textpg_intro_2x.png)先祭出一张神图镇楼
@@ -89,4 +91,10 @@ _kerning:_类似大写W和大写A，[如图](https://developer.apple.com/library
 _Alignment：_左、右、居中对齐，[图](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Art/alignmentkinds_2x.png)
 
 _justified：_左右同时对齐，[图](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Art/justified_2x.png)
+
+## 2、CoreText理论知识 {#coretext}
+
+
+
+
 
