@@ -94,5 +94,45 @@ _justified：_左右同时对齐，[图](https://developer.apple.com/library/arc
 
 ## 2、CoreText理论知识
 
+#### 简介
+
+对于开发者来说coretext是设置文字显示更底层的api。
+
+Core Text适用于与Core Graphics framework \(Quartz\)相关联的更低层处理文本技术的应用程序。如果你直接使用Quartz并且需要绘制文本。例如，你有自己的页面布局引擎，你有一些文本并且你知道这些文本需要如何显示。你可以使用Core Text来生成glyphs并且针对它们的样式如如紧排、连字、换行、连字符和对正进行的精准的位置排布。
+
+CoreText创造glyphs（从characters 代码和font data），并在glyph运行中相对定位它们。它将glyph拆分进行，他这些行组成多行帧，例如段落。Core Text 还提供glyphs和 layout的相关数据。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
