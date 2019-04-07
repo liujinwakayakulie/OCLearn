@@ -28,7 +28,7 @@
 
 ---
 
-### 1-1.知识准备
+### 知识准备
 
 #### Characters and Glyphs
 
