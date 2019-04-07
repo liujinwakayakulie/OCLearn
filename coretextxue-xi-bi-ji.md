@@ -22,7 +22,7 @@
 
 [文字在iOS的显示](#1)
 
-[CoreText理论知识](#coretext)
+[CoreText理论知识](#2、coretext理论知识)
 
 ## 1、文字在iOS的显示
 
@@ -92,9 +92,7 @@ _Alignment：_左、右、居中对齐，[图](https://developer.apple.com/libra
 
 _justified：_左右同时对齐，[图](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Art/justified_2x.png)
 
-## 2、CoreText理论知识 {#coretext}
-
-
+## 2、CoreText理论知识
 
 
 
