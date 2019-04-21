@@ -1,12 +1,6 @@
-#  从零开始DIY机械键盘-零代码版
+# 从零开始DIY机械键盘-零代码版
 
 ## 机械键盘原理概述图
-
-  
-
-
-  
-
 
 ## 整体采用方案如下：
 
@@ -22,7 +16,7 @@
 
 键帽：垃圾包键帽
 
-## 搜搜集相关经验帖如下（如果打不开，请翻墙）
+## 搜集相关经验帖如下（如果打不开，请翻墙）
 
 [http://tieba.baidu.com/p/5448123499?see\_lz=1&pn=2](http://tieba.baidu.com/p/5448123499?see_lz=1&pn=2)
 
@@ -34,9 +28,9 @@
 
 [http://dy.163.com/v2/article/detail/DK51DVE40511D7HR.html](http://dy.163.com/v2/article/detail/DK51DVE40511D7HR.html)
 
-https://forum.51nb.com/thread-1650426-1-1.html
+[https://forum.51nb.com/thread-1650426-1-1.html](https://forum.51nb.com/thread-1650426-1-1.html)
 
-## 相文中提到的工具类网站如下（如果打不开，请翻墙） 
+## 文中提到的工具类网站如下（如果打不开，请翻墙）
 
 [http://www.keyboard-layout-editor.com](http://www.keyboard-layout-editor.com)键盘佩列网站
 
@@ -60,27 +54,25 @@ https://forum.51nb.com/thread-1650426-1-1.html
 
 院长 1800佩列优联pcb作者，QQ群号375379462
 
-## 正文 
+## 正文
 
 ### 1、主控
 
 #### 1-1确认键盘佩列
 
-http://www.keyboard-layout-editor.com/\#/
+[http://www.keyboard-layout-editor.com/\#/](http://www.keyboard-layout-editor.com/#/)
 
 上方连接为确认佩列的网站，是一位大神做的开源项目。打开后可以看到下图，红色为我的一些标注
 
-![](/assets/佩列网站介绍.png)  
-
+![](/assets/佩列网站介绍.png)
 
 如上图所示，我们可以选择预设好的键盘佩列直接用，也可以在预设好的键盘佩列基础上改，基本用到的就是修改宽高XY这四个属性。下图为我的键盘佩列
 
-![](/assets/我的佩列.png)  
-
+![](/assets/我的佩列.png)
 
 我们需要将Raw data的数据保存下来，生成定位板、生成固件、之后改进都需要用到。
 
-我这边用到了出了1X还有一个2.75X和1.25X，制作这样的佩列有两个原因，一：键帽好配，二：可以有位置带上方向键。
+我这边用键位除了1X还有一个2.75X和1.25X，制作这样的佩列有两个原因，一：键帽好配，二：可以有位置带上方向键。
 
 #### 1-2制作固件
 
@@ -90,8 +82,6 @@ http://www.keyboard-layout-editor.com/\#/
 
 如下图我们将Raw Data数据复制到输入框中，点击import  
 ![](/assets/固件-1.png)
-
-
 
 点击之后会出现如下界面
 
@@ -107,8 +97,7 @@ http://www.keyboard-layout-editor.com/\#/
 
 切换到pins，我们可以看到主控和引脚的选择。鼠标移动到？可以看到常见的主控有alps64 arduino teensy gh60。我们根据自己购买的主控型号选择对用选项，然后再根据主控的引脚，设置对应的列与行的引脚。具体大家采用了哪个主控可以自行百度其引脚定义，[pro micro的引脚定义](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ProMicro16MHzv1.pdf)。因此我的row定义为D1 D0 D4 C6，col定义为D7 E6 B4 B5 B6 B2 B3 B1 F7 F6 F5 F4。
 
-![](/assets/固件-3.png)  
-
+![](/assets/固件-3.png)
 
 ##### 1-2-3键位设置
 
@@ -130,15 +119,13 @@ http://www.keyboard-layout-editor.com/\#/
 
 打开SETTRINGS tab点击红框内按钮，我们会保存一个.json的文件，如果我们在之后想更改设置，可以在打开网站时直接选择upload json文件，就可以在此前我们设置的基础上修改了。
 
-![](/assets/固件-5.png)  
-
+![](/assets/固件-5.png)
 
 ##### 1-2-5生成固件文件
 
 打开COMPILE tab点击download.hex按钮我们就可以生成固件文件下载到电脑中。此前我们所有的设置都在固件文件中。
 
-![](/assets/固件-6.png)  
-
+![](/assets/固件-6.png)
 
 #### 1-3烧录文件
 
@@ -155,9 +142,6 @@ http://www.keyboard-layout-editor.com/\#/
 电脑连接arduino，电脑端会看到串口工具，此时arduino还不会被电脑是被键盘。我们打开烧录工具，选择此前下载的.hex文件，进行烧录即可，具体进度可以查看log。
 
 我们可以借助此工具多次烧录，如果被识别为键盘是无法烧录的，需要短接GND与REST两次，arduino会在短时间内被识别成串口工具，我们就在此时间段内再次烧录即可。烧录成功后我们可以短接col和row，测试是否成功烧录了此前的设置键位。
-
-  
-
 
 至此主控就已经完成了。
 
@@ -186,9 +170,5 @@ http://www.keyboard-layout-editor.com/\#/
 
 我这里是什么都不改直接生成默认图形后，下载 .dxf文件，然后使用AutoCad进行简单修改。我也是边查资料边画，画的不专业，下面是我绘制的设计图。
 
-
-
 至此主控、pcb、外壳三大件已经制作完成。余下的工作就是组装了，大家最好在全部焊接前分模块测试一下，包括主控是否正常工作，pcb是否有问题，二极管方向时候正确等等。
-
-
 
