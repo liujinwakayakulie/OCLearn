@@ -44,7 +44,7 @@
 
 [http://download.savannah.gnu.org/releases/avrdude/](http://download.savannah.gnu.org/releases/avrdude/) 刷入所需**avrdude**工具网站
 
-[https://github.com/ruiqimao/keyboard-pcb-guide](https://github.com/ruiqimao/keyboard-pcb-guide) kicad学习网站
+[https://github.com/ruiqimao/keyboard-pcb-guide](https://github.com/ruiqimao/keyboard-pcb-guide) kicad键盘绘制网站
 
 [http://haipeng.me/2018/05/24/kicad\_advanced\_tutorial\_1\_new\_component/](http://haipeng.me/2018/05/24/kicad_advanced_tutorial_1_new_component/)kicad中文教学
 
