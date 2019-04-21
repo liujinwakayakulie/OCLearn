@@ -139,7 +139,7 @@
 
 烧录过程如下。
 
-电脑连接arduino，电脑端会看到串口工具，此时arduino还不会被电脑是被键盘。我们打开烧录工具，选择此前下载的.hex文件，进行烧录即可，具体进度可以查看log。
+电脑连接arduino，电脑端会看到串口工具，此时arduino还不会被电脑识别为键盘。我们打开烧录工具，选择此前下载的.hex文件，进行烧录即可，具体进度可以查看log。
 
 我们可以借助此工具多次烧录，如果被识别为键盘是无法烧录的，需要短接GND与REST两次，arduino会在短时间内被识别成串口工具，我们就在此时间段内再次烧录即可。烧录成功后我们可以短接col和row，测试是否成功烧录了此前的设置键位。
 
@@ -151,7 +151,7 @@
 
 以下为0基础需要用到的两个网站。
 
-[https://github.com/ruiqimao/keyboard-pcb-guide](https://github.com/ruiqimao/keyboard-pcb-guide)    kicad学习网站
+[https://github.com/ruiqimao/keyboard-pcb-guide](https://github.com/ruiqimao/keyboard-pcb-guide)    kicad键盘教程网站
 
 [http://haipeng.me/2018/05/24/kicad\_advanced\_tutorial\_1\_new\_component/](http://haipeng.me/2018/05/24/kicad_advanced_tutorial_1_new_component/)   kicad中文教学
 
@@ -166,7 +166,13 @@
 
 我们将1-1中的Raw data数据复制到[http://builder.swillkb.com/](http://builder.swillkb.com/)中。
 
+![](/assets/定位板.png)
+
 我们主要修改的是edge Padding（四周填充）和custom polygons这两个。
+
+设置完成后点击最下方 Draw My CAD!!! 按钮 短暂等待后会看到如下界面，我们可以下载自己需要的文件格式。
+
+![](/assets/定位板2.png)
 
 我这里是什么都不改直接生成默认图形后，下载 .dxf文件，然后使用AutoCad进行简单修改。我也是边查资料边画，画的不专业，下面是我绘制的设计图。
 
