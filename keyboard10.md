@@ -2,6 +2,8 @@
 
 ## 机械键盘原理概述图
 
+![](/assets/键盘.png)
+
 ## 整体采用方案如下：
 
 主控硬件：arduino pro micro版本
