@@ -52,6 +52,10 @@
 
 [https://github.com/Biacco42/ProMicroKiCad](https://github.com/Biacco42/ProMicroKiCad)主控元件库封装
 
+## 我的定位板、PCB、生产文件
+
+https://github.com/liujinwakayakulie/keyboard/tree/master/keyboard\_arduino
+
 ## 特别感谢
 
 院长 1800配列优联pcb作者，QQ群号375379462
