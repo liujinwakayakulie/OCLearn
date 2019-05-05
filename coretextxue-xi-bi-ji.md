@@ -1,8 +1,10 @@
-# **CoreText学习笔记**
+# CoreText学习笔记
+
+## **CoreText学习笔记**
 
 综合现有中文资料和苹果官方文档整理
 
-##### 以下为引用文章地址
+**以下为引用文章地址**
 
 [xiaoxiaobukuang的专栏](https://blog.csdn.net/xiaoxiaobukuang)
 
@@ -18,33 +20,31 @@
 
 [Core Text Programming Guide](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/CoreText_Programming/Introduction/Introduction.html)
 
-# 目录
+## 目录
 
-[文字在iOS的显示](#1、文字在ios的显示)
+[文字在iOS的显示](coretextxue-xi-bi-ji.md#1、文字在ios的显示)
 
-[CoreText理论知识](#2、coretext理论知识)
+[CoreText理论知识](coretextxue-xi-bi-ji.md#2、coretext理论知识)
 
-## 1、文字在iOS的显示
+### 1、文字在iOS的显示
 
-![](/assets/textpg_intro_2x.png)先祭出一张神图镇楼
+![](.gitbook/assets/textpg_intro_2x.png)先祭出一张神图镇楼
 
----
+#### 知识准备
 
-### 知识准备
-
-#### Characters and Glyphs
+**Characters and Glyphs**
 
 character是最小的具有意义的书面语言。character是一个抽象的概念，比如a，这就是一个英文字符，我们说出这个单词就能知道它代表英文26个字母的第一个。
 
 character必须在一定区域里以可识别的形状展现，这也就是Glyph的概念，简单理解就是你知道字符a，怎么能让人在视觉上能直观看到它，并且一看到它就能知道其抽象概念，这是一个抽象到具象的过程。这也就意味着一个character并不是和glyph一一对应的。一个character可以对应多个Glyphs.
 
-![](/assets/glyph_a_2x.png)
+![](.gitbook/assets/glyph_a_2x.png)
 
 这五个a就是不同的glyph，一个glyph也可以和多个character对应。连笔\(ligature\)造成了一个glyph对应多个character。
 
-![](/assets/romanligatures_2x.png)
+![](.gitbook/assets/romanligatures_2x.png)
 
-#### Typefaces and Fonts
+**Typefaces and Fonts**
 
 **typeface** 是书面语言中部分或者所有characters在视觉上相关联的形状。举个🌰 ：Times。
 
@@ -54,11 +54,11 @@ character必须在一定区域里以可识别的形状展现，这也就是Glyph
 
 **font family** 是同一个typeface但是不同typestyle的font集合,比如Times roman 和 Times Italic就是属于Times family的两个不同的fonts。如下图
 
-![](/assets/times_font_family_2x.png)
+![](.gitbook/assets/times_font_family_2x.png)
 
 **Styles**, also called _**trait**s_, include variations such as bold, italic, condensed, expanded, narrow, small caps, poster fonts, and fixed pitch.Styles像是另一种划分标准。
 
-#### Text Layout
+**Text Layout**
 
 那么需求就来了，我们的目的是将这些书面语言能展示到我们的可视化设备上，这里的可视化设备仅讨论手机。
 
@@ -92,47 +92,13 @@ _Alignment：_左、右、居中对齐，[图](https://developer.apple.com/libra
 
 _justified：_左右同时对齐，[图](https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/Art/justified_2x.png)
 
-## 2、CoreText理论知识
+### 2、CoreText理论知识
 
-#### 简介
+**简介**
 
 对于开发者来说coretext是设置文字显示更底层的api。
 
 Core Text适用于与Core Graphics framework \(Quartz\)相关联的更低层处理文本技术的应用程序。如果你直接使用Quartz并且需要绘制文本。例如，你有自己的页面布局引擎，你有一些文本并且你知道这些文本需要如何显示。你可以使用Core Text来生成glyphs并且针对它们的样式如如紧排、连字、换行、连字符和对正进行的精准的位置排布。
 
 CoreText创造glyphs（从characters 代码和font data），并在glyph运行中相对定位它们。它将glyph拆分进行，他这些行组成多行帧，例如段落。Core Text 还提供glyphs和 layout的相关数据。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
